@@ -13,10 +13,11 @@ all_genres_set = set()
 category = ''
 genre = ''
 
-def find_all(setname, iterated_obj):
+
+def find_all(set_name, iterated_obj):
     x = iterated_obj.split(';')
     for y in x:
-        setname.add(y)
+        set_name.add(y)
 
 
 with open('steam.csv', encoding='latin1') as file:
